@@ -1,75 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Marina Isni</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Isni - Portfolio</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f8f8f8;
-        }
-
-        .hero {
-            width: 100%;
-            height: 85vh;
-            background: url("https://files.catbox.moe/tygvis.jpg") center/cover no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 60px;
-            color: white;
-            background: rgba(0, 0, 0, 0.35);
-            padding: 20px 40px;
-            border-radius: 10px;
-            font-weight: bold;
-            backdrop-filter: blur(3px);
-        }
-
-        .section {
-            padding: 60px 10%;
-        }
-
-        h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
+            background-color: #ffffff;
             color: #333;
         }
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 38px;
-                width: 90%;
-            }
+        header img {
+            width: 100%;
+            height: auto;
+            border-bottom: 4px solid #eee;
+        }
+
+        .section {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            font-size: 20px;
+            text-align: center;
+            margin-top: -20px;
+            color: #444;
+        }
+
+        .contact-img {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            background: #fafafa;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
 
 <body>
 
-    <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-    </section>
+    <!-- HEADER IMAGE (YOUR FIRST IMAGE) -->
+    <header>
+        <img src="pohon kelapa-imageonline.co.jpg" alt="Professional Header">
+    </header>
 
-    <section class="section">
+    <div class="section">
+        <h1>Marina Isni</h1>
+        <p class="intro-text">Senior Sales Support | 10+ Years Experience in Administration & Coordination</p>
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+    <div class="section">
         <h2>About Me</h2>
         <p>
-            Hello! I’m <strong>Marina Isni</strong>. This is my professional portfolio containing my work, CV,
-            experience, and achievements. Feel free to explore my projects and background.
+            I am a senior administration and sales support professional with over 10 years of experience in
+            administrative operations, sales coordination, reporting, and customer support.  
+            Skilled in communication, documentation, data management, and cross-department coordination.
         </p>
-    </section>
+    </div>
 
-    <section class="section">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p>GitHub: <a href="https://github.com/Marina-Isni888">github.com/Marina-Isni888</a></p>
-    </section>
+    <!-- CONTACT IMAGE SECTION (YOUR SECOND IMAGE) -->
+    <div class="section">
+        <h2>Contact Information</h2>
+        <img src="Gambar-Keren-1-1024x576-imageonline.co.webp" alt="Contact Info Image" class="contact-img">
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+        © 2025 Marina Isni — All Rights Reserved
+    </div>
 
 </body>
 </html>
