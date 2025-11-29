@@ -1,63 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Background Video</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Marina Isni</title>
 
-<style>
-    /* Video container */
+  <style>
+    /* Reset dasar */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    /* Video background */
     .video-background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        z-index: -1;
-        background: #000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+      background: #000;
     }
-
-    /* Video */
     .video-background video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        transform: translate(-50%, -50%);
-        object-fit: cover;
-        filter: brightness(80%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      filter: brightness(70%);
     }
 
-    /* Content on top */
+    /* Konten utama */
     .content {
-        position: relative;
-        z-index: 10;
-        text-align: center;
-        color: white;
-        padding-top: 20vh;
-        font-family: Arial, sans-serif;
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 100px 20px;
     }
-</style>
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Contoh section: about, portfolio, contact */
+    section {
+      max-width: 800px;
+      margin: 50px auto;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #00aaff;
+    }
+  </style>
 </head>
 <body>
 
-<!-- Background Video -->
-<div class="video-background">
-    <video autoplay muted loop playsinline preload="auto">
-        <source src="bg-video-loop-web-2pass.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
+  <!-- Video as background -->
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="bg-video-loop-web-2pass.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
-</div>
+  </div>
 
-<!-- Content Above Video -->
-<div class="content">
-    <h1>Website Portfolio Marina</h1>
-    <p>Background video yang smooth & cepat di-load</p>
-</div>
+  <!-- Konten utama -->
+  <div class="content">
+    <header>
+      <h1>Marina Isni</h1>
+      <p>Welcome to my portfolio</p>
+    </header>
+
+    <!-- Contoh section About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Halo! Saya Marina — web developer / desainer / content creator. Di sini kamu bisa melihat proyek dan karya saya.</p>
+    </section>
+
+    <!-- Contoh section Portofolio -->
+    <section id="portfolio">
+      <h2>My Works</h2>
+      <p>Proyek akan saya tampilkan di sini nanti. 🙂</p>
+    </section>
+
+    <!-- Contoh section Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+    </section>
+  </div>
 
 </body>
 </html>
