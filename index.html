@@ -1,86 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marina Isni - Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Background Video</title>
 
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      overflow-x: hidden;
-      background: #000;
+<style>
+    /* Video container */
+    .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        background: #000;
     }
 
-    /* VIDEO BACKGROUND */
-    #bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
+    /* Video */
+    .video-background video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        filter: brightness(80%);
     }
 
-    /* CONTENT WRAPPER */
+    /* Content on top */
     .content {
-      position: relative;
-      z-index: 10;
-      padding: 40px;
-      background: rgba(0,0,0,0.4);
-      color: white;
-      min-height: 100vh;
+        position: relative;
+        z-index: 10;
+        text-align: center;
+        color: white;
+        padding-top: 20vh;
+        font-family: Arial, sans-serif;
     }
-
-    h2 {
-      margin-top: 40px;
-    }
-
-    button {
-      background-color: #007bff;
-      border: none;
-      padding: 12px 20px;
-      color: white;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-
-    button:hover {
-      background-color: #005bbb;
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-  </style>
+</style>
 </head>
-
 <body>
 
-  <!-- VIDEO BACKGROUND -->
-  <video autoplay loop muted playsinline id="bg-video">
-    <source src="bg-video.mp4" type="video/mp4">
-  </video>
+<!-- Background Video -->
+<div class="video-background">
+    <video autoplay muted loop playsinline preload="auto">
+        <source src="bg-video-loop-web-2pass.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+</div>
 
-  <!-- PAGE CONTENT -->
-  <div class="content">
-    <h1>Marina Isni - Portfolio</h1>
-
-    <h2>My CV</h2>
-    <a href="CURRICULUM VITAE of MARINA ISNI. 19.888.pdf" download>
-      <button>Download My CV</button>
-    </a>
-
-    <h2>Portfolio Background Image</h2>
-    <img src="Gambar-Keren-1-1024x576.webp" alt="Background Image">
-  </div>
+<!-- Content Above Video -->
+<div class="content">
+    <h1>Website Portfolio Marina</h1>
+    <p>Background video yang smooth & cepat di-load</p>
+</div>
 
 </body>
 </html>
