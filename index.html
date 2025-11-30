@@ -2,90 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marina Isni - Portfolio</title>
-
+    <title>Marina Isni Portfolio</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-        }
-
-        header img {
-            width: 100%;
-            height: auto;
-            border-bottom: 4px solid #eee;
-        }
-
+        body { margin: 0; font-family: Arial, sans-serif; }
         .section {
-            padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h1, h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .intro-text {
-            font-size: 20px;
-            text-align: center;
-            margin-top: -20px;
-            color: #444;
-        }
-
-        .contact-img {
+            position: relative;
             width: 100%;
-            border-radius: 12px;
-            margin-top: 20px;
+            height: 100vh;
+            color: white;
         }
-
-        .footer {
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-            background: #fafafa;
-            border-top: 1px solid #eee;
+        .section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .text-overlay {
+            position: absolute;
+            bottom: 40px;
+            left: 40px;
+            font-size: 32px;
+            line-height: 1.4;
+            font-weight: bold;
+            text-shadow: 2px 2px 6px black;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- HEADER IMAGE (YOUR FIRST IMAGE) -->
-    <header>
-        <img src="pohon kelapa-imageonline.co.jpg" alt="Professional Header">
-    </header>
-
+    <!-- SECTION 1 -->
     <div class="section">
-        <h1>Marina Isni</h1>
-        <p class="intro-text">Senior Sales Support | 10+ Years Experience in Administration & Coordination</p>
+        <img src="pohon kelapa-imageonline.co.jpg" alt="Background 1">
+        <div class="text-overlay">
+            Senior Sales Support <br>
+            Senior administration professional with 10+ years experience
+        </div>
     </div>
 
-
-    <!-- ABOUT SECTION -->
+    <!-- SECTION 2 -->
     <div class="section">
-        <h2>About Me</h2>
-        <p>
-            I am a senior administration and sales support professional with over 10 years of experience in
-            administrative operations, sales coordination, reporting, and customer support.  
-            Skilled in communication, documentation, data management, and cross-department coordination.
-        </p>
+        <img src="Gambar-Keren-1-1024x576-imageonline.co.webp" alt="Contact Image">
+        <div class="text-overlay" style="font-size:28px;">
+            Jakarta, Indonesia <br>
+            +6285310489757 <br>
+            marinated.19@gmail.com <br>
+            LinkedIn: Marina Isni
+        </div>
     </div>
 
-    <!-- CONTACT IMAGE SECTION (YOUR SECOND IMAGE) -->
+    <!-- SECTION 3 -->
     <div class="section">
-        <h2>Contact Information</h2>
-        <img src="Gambar-Keren-1-1024x576-imageonline.co.webp" alt="Contact Info Image" class="contact-img">
-    </div>
-
-
-    <!-- FOOTER -->
-    <div class="footer">
-        © 2025 Marina Isni — All Rights Reserved
+        <img src="6080984-imageonline.co.jpg" alt="Portfolio">
+        <div class="text-overlay" style="font-size:42px;">
+            Portofolio
+        </div>
     </div>
 
 </body>
